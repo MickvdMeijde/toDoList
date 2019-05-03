@@ -13,5 +13,6 @@
             }
         }
     }
-    echo "<p><a href='createItem'>+ Toevoegen</a></p>";
+    echo "<p><a href='createItem.php'>+ Item</a></p>";
+    echo "<p><a href='createList.php'>+ List</a></p>";
 ?>

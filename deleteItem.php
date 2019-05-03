@@ -10,7 +10,7 @@ elseif (isset($_POST['no'])) {
 
 ?>
 
-<h1>Are you sure that you woulf like to delete <?php print_r($current['name']); ?>?</h1>
+<h1>Are you sure that you would like to delete <?php print_r($current['name']); ?>?</h1>
 <form method="post" action="">
     <input type="submit" name="yes" value="Yes">
     <input type="submit" name="no" value="No">
