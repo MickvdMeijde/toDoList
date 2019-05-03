@@ -1,9 +1,8 @@
 <?php
 
-    $months = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
+    $months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
 
     if(isset($_POST['Create'])) {
-        createRow();
         header('location: ' . URL . 'home/index');
     }
 ?>

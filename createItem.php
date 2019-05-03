@@ -3,8 +3,7 @@
     $months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
 
     if(isset($_POST['Create'])) {
-        createRow();
-        header('location: ' . URL . 'home/index');
+        header('/index');
     }
 ?>
 

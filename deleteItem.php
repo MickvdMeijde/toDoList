@@ -1,7 +1,6 @@
 <?php
 
 if (isset($_POST['yes'])) {
-    deleteRow($id);
     header('location: ' . URL . 'home/index');
 }
 elseif (isset($_POST['no'])) {
