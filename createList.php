@@ -1,6 +1,5 @@
 <?php
     require 'db.php';
-    $months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
 
     if(isset($_POST['Create'])) {
         $sql = "INSERT INTO todolist (label)  VALUES(:label)";
