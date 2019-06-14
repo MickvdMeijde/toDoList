@@ -13,6 +13,9 @@
         }
     }
 ?>
+<head>
+    <title>Create A List</title>
+</head>
 
 <form method="POST" action="">
     <div class="create">
@@ -22,5 +25,6 @@
         <input type="text" min="1" max="20" name="listLabel" placeholder="list name" required>
         <br>
         <button class="createButton" type="submit" name="Create" value="create">Create</button>
+        <button class="createButton" name="return"></button>
     </div>
 </form>

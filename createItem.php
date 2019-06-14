@@ -15,6 +15,9 @@
         }
     }
 ?>
+<head>
+    <title>Create An Item</title>
+</head>
 
 <form method="POST" action="">
     <div class="create">
