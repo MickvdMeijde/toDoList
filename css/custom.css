@@ -1,0 +1,17 @@
+/* text */
+h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* body */
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* elements*/
+button{
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+/* font imports */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed|Open+Sans&display=swap');

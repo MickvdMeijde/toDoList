@@ -1,3 +1,11 @@
+<head>
+    <title>Create A List</title>
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/fa13d1e8a3.js"></script>
+    <script src="js/notif.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
 <?php
     require 'db.php';
 
@@ -7,24 +15,21 @@
          $query->bindParam(":label", $_POST["listLabel"]);
          if ($query->execute() == TRUE) {
 
-            echo "New record created successfully";
+            '<script type="text/javascript"> notifyCreate(); </script>';
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
 ?>
-<head>
-    <title>Create A List</title>
-</head>
 
-<form method="POST" action="">
     <div class="create">
-        <h1 style="color: black;"><b>Create</b></h1>
-
-        <label class="createLabel"><b>List Name</b></label>
-        <input type="text" min="1" max="20" name="listLabel" placeholder="list name" required>
-        <br>
-        <button class="createButton" type="submit" name="Create" value="create">Create</button>
-        <button class="createButton" name="return"></button>
+        <h1><b>Create</b></h1>
+        <form method="POST" action="">
+            <label class="createLabel"><b>List Name</b></label>
+            <input type="text" min="1" max="20" name="listLabel" placeholder="list name" required>
+            <br>
+            <button class="createButton" type="submit" name="Create" value="create">CREATE</button>
+        </form>
     </div>
-</form>
+    <button class="backButton" name="return"><a href="index.php"><i class="fas fa-angle-left"></i> RETURN</a></button>
+    <button onclick=notifyConnect()>notify</button>
